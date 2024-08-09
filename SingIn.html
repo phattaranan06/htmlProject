@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div style="background-color: red">
+      <div class="register-container">
+        <h2>Log in</h2>
+
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Full Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="exampie@gmail.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="pwd" name="pwd" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Confrim Password:</label>
+          <input type="password" id="pwd" name="pwd" required />
+        </div>
+
+        <div>
+          <label for="terms">
+            <input type="checkbox" id="terms" name="terms" required />
+            <a
+              style="
+                cursor: pointer;
+                font-size: px;
+                font-weight: 600;
+                color: white;
+              "
+            >
+              Remember Me
+            </a>
+          </label>
+        </div>
+
+        <!-- <div
+              class="hovertest"
+              style="text-align: end; margin-top: 10px; margin-bottom: 10px"
+            >
+              <a
+                href="login.html"
+                style="cursor: pointer; font-size: px; font-weight: 600; color: white"
+                >มีสมาชิกอยู่แล้ว เข้าสู่ระบบเลย</a
+              >
+            </div> -->
+
+        <button onclick="NexPage() " class="buttonRegister" type="ssubmit">
+          Login
+        </button>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function NexPage() {
+      window.location.href = "HomePage.html";
+    }
+  </script>
+</html>
